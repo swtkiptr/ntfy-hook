@@ -1,102 +1,112 @@
 # ntfy Hook
 
-ntfy Hook is a simple Android application designed to hook incoming notifications to an ntfy server. It provides an easy way to bridge notifications from your Android device to your preferred ntfy server, enabling you to receive notifications across multiple devices and platforms seamlessly.
+<div align="center">
+  <img src="app/src/main/res/drawable/banner.png" alt="ntfy Hook Logo" width="600">
+</div>
 
-## About This Fork
+<div align="center">
+  <strong>Your notifications, anywhere, anytime.</strong>
+  <p>A simple and reliable Android app for forwarding notifications to ntfy servers.</p>
+</div>
 
-This is a fork of the original [ntfy Hook](https://github.com/ubaldop/ntfy-hook) project created by Ubaldo Porcheddu. This fork was created in April 2025 to address several critical issues and enhance functionality while maintaining compatibility with the original design.
+<div align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License: GPL v3"></a>
+  <img src="https://img.shields.io/badge/Platform-Android-brightgreen.svg" alt="Platform: Android">
+  <img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="Version: 1.0.0">
+</div>
 
-### Key Improvements in this Fork:
+<br>
 
-- Fixed service persistence issues that caused notifications to stop after device restarts
-- Added better notification handling and UI status indicators
-- Enhanced error handling and connection reliability
-- Improved permanent notification display for foreground service
-- Fixed server connection state tracking for better status reporting
-- Added more robust notification listener service binding
-- Resolved force close issues when enabling the hook service
+## 📱 Overview
 
-The goal of this fork is to provide a more stable and feature-rich version of the original application while maintaining its simplicity and efficiency. All improvements have been thoroughly tested on modern Android devices.
+ntfy Hook seamlessly bridges your Android device notifications to any ntfy server, allowing you to:
+- Receive your phone notifications on computers, tablets, and other devices
+- Selectively forward notifications from specific apps
+- Keep a history of all sent notifications
+- Monitor connection status with real-time indicators
 
-If you encounter any issues or have suggestions for further improvements, please open an issue in the repository.
+This fork by swtkiptr enhances the original [ntfy relay](https://github.com/eja/ntfy-relay) project with improved reliability and additional features.
 
-## Screenshots
+## ✨ Key Features
 
-Here's what the app looks like:
+- **Selective Notification Forwarding**: Choose exactly which apps can send notifications through your server
+- **Real-time Status Monitoring**: Color-coded indicators show connection and service status at a glance
+- **Complete Notification History**: Browse through a complete log of all forwarded notifications
+- **Automatic Recovery**: Service restarts after device reboot, maintaining persistent connections
+- **Simple Configuration**: Easy setup with minimal steps - just add your server URL and select apps
 
+## 📸 Screenshots
 
-![image1](screenshot/1.jpeg)
-![image2](screenshot/2.jpeg)
-![image3](screenshot/3.jpeg)
-![image4](screenshot/4.jpeg)
-![image5](screenshot/5.jpeg)
+<div align="center">
+  <img src="screenshot/1.jpg" alt="Main Screen" width="200">
 
-## Features
+</div>
 
-- **Notification hook**: Listen for incoming notifications on your Android device and forward them to an ntfy server.
-- **App Selection**: Choose which apps' notifications you want to forward.
-- **Notification History**: View a complete history of all sent notifications with timestamps.
-- **Status Indicators**: Real-time monitoring of service and connection status with color-coded indicators.
-- **Automatic Recovery**: Service automatically restarts after device reboot.
-- **Persistent Connection**: Keep-alive mechanism maintains a reliable connection to your ntfy server.
-- **Easy Configuration**: Simple user interface for quick setup and management.
+## 🚀 Improvements in this Fork
 
-## How it Works
+- **Fixed Service Persistence**: Notifications continue after phone restarts
+- **Enhanced Error Handling**: Better recovery from connection issues
+- **Improved UI**: Status indicators and notification display enhancements
+- **Reliable Connection Management**: Keeps consistent connection to ntfy servers
+- **Force Close Resolution**: Fixed critical bugs in the notification service
 
-ntfy Hook works by intercepting notifications on your Android device and forwarding them to an ntfy server using a simple HTTPS request. The notification listener service runs in the background and monitors for new notifications from your selected apps. When a notification appears, it's immediately sent to your configured ntfy server, which then processes and delivers these notifications to your desired destinations, such as other devices or messaging platforms.
+## 🛠️ How It Works
 
-## Installation
+ntfy Hook uses Android's notification listener service to:
+1. Monitor for new notifications from your selected apps
+2. Securely forward notification content to your configured ntfy server via HTTPS
+3. Maintain a persistent connection through a foreground service
+4. Provide real-time feedback on service and connection status
 
-To install ntfy Hook, follow these steps:
+## 📋 Installation
 
-1. Clone this repository to your local machine.
-2. Open the project in Android Studio.
-3. Build and install the APK on your Android device.
+### Option 1: From Source
+1. Clone this repository: `git clone https://github.com/swtkiptr/ntfy-relay.git`
+2. Open in Android Studio
+3. Build and install on your device
+4. Open the app and grant notification access when prompted
+5. Enable the notification service in the app settings
 
-Alternatively, you can download the APK file from the releases section and install it manually on your Android device.
+### Option 2: Direct Install
+1. Download the latest APK from the [releases section](https://github.com/swtkiptr/ntfy-relay/releases)
+2. Install on your Android device (ensure "Install from unknown sources" is enabled)
+3. Open the app and grant notification access when prompted
+4. Enable the notification service in the app settings
 
-## Configuration
+## ⚙️ Configuration
 
-Once installed, configure ntfy Hook with these simple steps:
+1. **Enter ntfy Server URL**: Provide the URL of your ntfy server
+2. **Select Apps**: Choose which applications to monitor for notifications
+3. **Enable Service**: Toggle the switch to start the notification service
+4. **Grant Permissions**: Allow notification access when prompted
 
-1. Enter the URL of your ntfy server in the provided input field.
-2. Select which apps you want to monitor for notifications.
-3. Toggle the service on using the switch button.
+## 📚 Usage Guide
 
-The app validates your settings and ensures all requirements are met before activating the service.
+1. Start the app and ensure notification access is granted
+2. Enter your ntfy server URL in the provided field
+3. Tap "Select Apps" to choose which app notifications to forward
+4. Enable the service with the toggle switch
+5. Check the status indicators to confirm proper connection
+6. View your notification history anytime through the history screen
 
-## Usage
+## 🔧 Technical Details
 
-1. Launch ntfy Hook on your Android device.
-2. Grant the necessary permissions for the app to access notifications when prompted.
-3. Configure the ntfy server URL.
-4. Select which apps' notifications should be hooked.
-5. Enable the hook service using the toggle switch.
-6. The app will display the current connection status and maintain a persistent notification while running.
-7. View your notification history through the "View Notification History" button.
+- Built with Kotlin for modern Android development
+- Implements foreground service for reliable background operation
+- Uses SharedPreferences with Gson for efficient data management
+- Features comprehensive error logging and recovery mechanisms
+- Organized with specialized manager classes for maintainability
 
-## Recent Improvements
+## 📄 License
 
-### Fixed Issues
+This project is licensed under the [GPL-3.0](LICENSE) - see the license file for details.
 
-- **Persistent Service**: App now continues sending notifications after phone restarts through the BootReceiver component.
-- **App Selection Reliability**: Fixed issues with notifications stopping when frequently changing selected apps.
+## 🙏 Acknowledgements
 
-### Enhanced Features
+- Original project by [Eja](https://github.com/eja/ntfy-relay)
+- Enhanced and maintained by [swtkiptr](https://github.com/swtkiptr)
 
-- **Notification History**: Complete tracking system for all sent notifications with details and timestamps.
-- **Status Indicators**: Comprehensive status display showing service state, server connection, and app selection.
-- **Improved Validation**: Prevents activation with missing URL or no selected apps, with clear error messages.
-- **Keep-Alive Mechanism**: Reliable foreground service with periodic connection checks and automatic reconnection.
+---
 
-## Technical Details
-
-- Runs as a proper foreground service with a persistent notification.
-- Uses efficient data management with SharedPreferences and Gson.
-- Implements singleton patterns for key managers.
-- Comprehensive error logging and recovery mechanisms.
-- Well-organized code structure with specialized manager classes.
-
-## License
-
-ntfy Hook is released under the [GPL-3.0](LICENSE).
+This README was generated with ❤️ by swtkiptr. For any issues or feature requests, please open an issue on the GitHub repository.
+Feel free to contribute and help improve this project!
