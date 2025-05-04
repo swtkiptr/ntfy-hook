@@ -1,7 +1,7 @@
 # ntfy Hook
 
 <div align="center">
-  <img src="logo-white.png" alt="ntfy Hook Logo" width="600">
+  <img src="logo-white.png" alt="ntfy Hook Logo" width="300">
 </div>
 
 <div align="center">
