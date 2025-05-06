@@ -78,7 +78,7 @@ ntfy Hook uses Android's notification listener service to:
 5. Enable the notification service in the app settings
 
 ### Option 2: Direct Install
-1. Download the latest APK from the [releases section](https://github.com/swtkiptr/ntfy-relay/releases)
+1. Download the latest APK from the [releases section](https://github.com/swtkiptr/ntfy-hook/releases)
 2. Install on your Android device (ensure "Install from unknown sources" is enabled)
 3. Open the app and grant notification access when prompted
 4. Enable the notification service in the app settings
