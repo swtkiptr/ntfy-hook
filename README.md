@@ -71,7 +71,7 @@ ntfy Hook uses Android's notification listener service to:
 ## 📋 Installation
 
 ### Option 1: From Source
-1. Clone this repository: `git clone https://github.com/swtkiptr/ntfy-relay.git`
+1. Clone this repository: `git clone https://github.com/swtkiptr/ntfy-hook.git`
 2. Open in Android Studio
 3. Build and install on your device
 4. Open the app and grant notification access when prompted
