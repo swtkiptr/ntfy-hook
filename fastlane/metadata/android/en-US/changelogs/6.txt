@@ -1,0 +1,1 @@
+Fixed fastline metadata generation for F-Droid
