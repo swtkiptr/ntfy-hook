@@ -16,3 +16,5 @@
 local.properties
 /app/build
 RECOMENDED_IMPROVEMENTS.md
+app/release/app-release.apk
+app/release/output-metadata.json
