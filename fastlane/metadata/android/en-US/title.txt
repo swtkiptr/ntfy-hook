@@ -1,1 +1,1 @@
-ntfy Hook seamlessly bridges your Android device notifications to any ntfy server.
+ntfy Hook

@@ -1,0 +1,3 @@
+- Disabled dependency info block for better F-Droid compatibility
+- Updated app icon and metadata resources
+- Fixed issues with notification forwarding reliability
