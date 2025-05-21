@@ -5,19 +5,24 @@ plugins {
 
 android {
     namespace = "id.swtkiptr.ntfyhook"
-    compileSdk = 34
-
-    defaultConfig {
+    compileSdk = 34    defaultConfig {
         applicationId = "id.swtkiptr.ntfyhook"
         minSdk = 24
         targetSdk = 34
-        versionCode = 3
-        versionName = "1.0.0"
+        versionCode = 4
+        versionName = "1.0.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
+    
+    dependenciesInfo {
+        // Disables dependency metadata when building APKs.
+        includeInApk = false
+        // Disables dependency metadata when building Android App Bundles.
+        includeInBundle = false
     }
     
     dependenciesInfo {
