@@ -1,0 +1,1 @@
+Fixed build.gradle.kts formatting issues for F-Droid compatibility
