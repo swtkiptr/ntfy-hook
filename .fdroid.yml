@@ -1,0 +1,32 @@
+Categories: [System, Internet]
+License: GPL-3.0-only
+AuthorName: swtkiptr
+SourceCode: https://github.com/swtkiptr/ntfy-hook
+IssueTracker: https://github.com/swtkiptr/ntfy-hook/issues
+Changelog: https://github.com/swtkiptr/ntfy-hook/releases
+
+Summary: Forward Android notifications to ntfy servers
+Description: |
+  ntfy Hook seamlessly bridges your Android device notifications to any ntfy server, allowing you to:
+  - Receive your phone notifications on computers, tablets, and other devices
+  - Selectively forward notifications from specific apps
+  - Keep a history of all sent notifications
+  - Monitor connection status with real-time indicators
+
+  This fork enhances the original ntfy relay project with improved reliability and additional features.
+
+RepoType: git
+Repo: https://github.com/swtkiptr/ntfy-hook
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 3
+    commit: main
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 3

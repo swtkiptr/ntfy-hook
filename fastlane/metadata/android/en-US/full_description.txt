@@ -1,0 +1,18 @@
+ntfy Hook seamlessly bridges your Android device notifications to any ntfy server, allowing you to:
+- Receive your phone notifications on computers, tablets, and other devices
+- Selectively forward notifications from specific apps
+- Keep a history of all sent notifications
+- Monitor connection status with real-time indicators
+
+Key Features:
+- Selective Notification Forwarding: Choose exactly which apps can send notifications through your server
+- Real-time Status Monitoring: Color-coded indicators show connection and service status at a glance
+- Complete Notification History: Browse through a complete log of all forwarded notifications
+- Automatic Recovery: Service restarts after device reboot, maintaining persistent connections
+- Simple Configuration: Easy setup with minimal steps - just add your server URL and select apps
+
+ntfy Hook uses Android's notification listener service to:
+1. Monitor for new notifications from your selected apps
+2. Securely forward notification content to your configured ntfy server via HTTPS
+3. Maintain a persistent connection through a foreground service
+4. Provide real-time feedback on service and connection status

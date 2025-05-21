@@ -1,0 +1,5 @@
+- Fixed Service Persistence: Notifications continue after phone restarts
+- Enhanced Error Handling: Better recovery from connection issues
+- Improved UI: Status indicators and notification display enhancements
+- Reliable Connection Management: Keeps consistent connection to ntfy servers
+- Force Close Resolution: Fixed critical bugs in the notification service
