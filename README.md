@@ -43,6 +43,10 @@ This fork by swtkiptr enhances the original [ntfy relay](https://github.com/eja/
 
 <div align="center">
   <img src="screenshot/1.jpg" alt="Main Screen" width="200">
+  <img src="screenshot/2.png" alt="Main Screen" width="200">
+  <img src="screenshot/3.png" alt="Main Screen" width="200">
+  <img src="screenshot/4.png" alt="Main Screen" width="200">
+  
 
 </div>
 
