@@ -74,6 +74,7 @@ Forked from [ntfy-relay](https://github.com/eja/ntfy-relay) with enhanced reliab
 1. Coming soon to F-Droid
 2. Will be available at: [F-Droid](https://f-droid.org)
 3. Includes reproducible builds and F-Droid metadata
+4. Follows F-Droid best practices
 
 ## ⚙️ Configuration
 
