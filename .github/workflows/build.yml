@@ -20,7 +20,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4 # Updated to latest version
         with:
-          java-version: '11'
+          java-version: '17'
           distribution: 'temurin' # Recommended for consistency
 
       - name: Grant execute permission for gradlew
