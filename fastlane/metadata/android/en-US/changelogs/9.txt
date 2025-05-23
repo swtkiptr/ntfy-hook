@@ -1,1 +1,4 @@
 Fixed Gradle wrapper properties to use proper distributionSha256Sum property
+Improved GitHub Actions workflow for automated builds
+Updated build configuration for F-Droid compatibility
+Fixed signing configuration for release builds
