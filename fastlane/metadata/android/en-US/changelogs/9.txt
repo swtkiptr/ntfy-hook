@@ -1,0 +1,1 @@
+Fixed Gradle wrapper properties to use proper distributionSha256Sum property
