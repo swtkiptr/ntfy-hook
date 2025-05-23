@@ -12,7 +12,7 @@
 <div align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License: GPL v3"></a>
   <img src="https://img.shields.io/badge/Platform-Android-brightgreen.svg" alt="Platform: Android">
-  <img src="https://img.shields.io/badge/Version-1.0.0-orange.svg" alt="Version: 1.0.0">
+  <img src="https://img.shields.io/badge/Version-1.0.6-orange.svg" alt="Version: 1.0.6">
 </div>
 
 <br>
@@ -69,6 +69,11 @@ Forked from [ntfy-relay](https://github.com/eja/ntfy-relay) with enhanced reliab
 1. Download APK from [releases](https://github.com/swtkiptr/ntfy-hook/releases)
 2. Install (enable "unknown sources")
 3. Grant notification access
+
+### F-Droid
+1. Coming soon to F-Droid
+2. Will be available at: [F-Droid](https://f-droid.org)
+3. Includes reproducible builds and F-Droid metadata
 
 ## ⚙️ Configuration
 
