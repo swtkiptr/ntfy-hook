@@ -51,13 +51,6 @@ Forked from [ntfy-relay](https://github.com/eja/ntfy-relay) with enhanced reliab
 - Reliable server connections
 - Resolved force-close bugs
 
-## 🛠️ How It Works
-
-1. Monitors selected app notifications
-2. Forwards them to your ntfy server via HTTPS
-3. Runs as a foreground service
-4. Shows real-time status
-
 ## 📋 Installation
 
 ### From Source
@@ -76,34 +69,12 @@ Forked from [ntfy-relay](https://github.com/eja/ntfy-relay) with enhanced reliab
 3. Includes reproducible builds and F-Droid metadata
 4. Follows F-Droid best practices
 
-## ⚙️ Configuration
-
-1. Enter ntfy server URL
-2. Select apps to monitor
-3. Enable service
-4. Grant permissions
-
 ## 📚 Usage
 
-1. Grant notification access
+1. Grant notification access (Allow Restricted Setting)
 2. Set ntfy server URL
 3. Select apps
 4. Enable service
-5. Monitor status and history
-
-## 🌐 ntfy.sh Tutorial
-
-1. Choose a topic: `https://ntfy.sh/my-topic`
-2. Test with: `curl -d "Test" https://ntfy.sh/my-topic`
-3. Subscribe via ntfy app or website
-4. Add topic URL to ntfy Hook
-
-## 🔧 Technical Details
-
-- Built with Kotlin
-- Uses foreground service
-- Stores data with SharedPreferences and Gson
-- Includes error logging and recovery
 
 ## 📄 License
 
