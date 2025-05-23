@@ -1,9 +1,14 @@
-Categories: [System, Internet]
+Categories:
+  - Internet
+  - System
 License: GPL-3.0-only
 AuthorName: swtkiptr
 SourceCode: https://github.com/swtkiptr/ntfy-hook
 IssueTracker: https://github.com/swtkiptr/ntfy-hook/issues
 Changelog: https://github.com/swtkiptr/ntfy-hook/releases
+WebSite: https://github.com/swtkiptr/ntfy-hook
+
+AutoName: ntfy Hook
 
 Summary: Forward Android notifications to ntfy servers
 Description: |
@@ -17,14 +22,63 @@ Description: |
 
 RepoType: git
 Repo: https://github.com/swtkiptr/ntfy-hook
+Binaries: https://github.com/swtkiptr/ntfy-hook/releases/download/v%v/app-release.apk
 
 Builds:
+  - versionName: 1.0.0
+    versionCode: 3
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+  
+  - versionName: 1.0.1
+    versionCode: 4
+    commit: v1.0.1
+    subdir: app
+    gradle:
+      - yes
+  
+  - versionName: 1.0.2
+    versionCode: 5
+    commit: v1.0.2
+    subdir: app
+    gradle:
+      - yes
+  
+  - versionName: 1.0.3
+    versionCode: 6
+    commit: v1.0.3
+    subdir: app
+    gradle:
+      - yes
+  
+  - versionName: 1.0.4
+    versionCode: 7
+    commit: v1.0.4
+    subdir: app
+    gradle:
+      - yes
+  
+  - versionName: 1.0.5
+    versionCode: 8
+    commit: v1.0.5
+    subdir: app
+    gradle:
+      - yes
+  
   - versionName: 1.0.6
     versionCode: 9
     commit: v1.0.6
     subdir: app
     gradle:
       - yes
+
+AllowedAPKSigningKeys: 4cd08d51d7177b436eb3e3c9157410e31f0ef6ffbda0915f84fc0b99602fc501
+
+MaintainerNotes: |
+  The app uses standard Android libraries and has no proprietary dependencies.
+  Signing config is set to null in the release build type to allow F-Droid to sign the APK.
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
