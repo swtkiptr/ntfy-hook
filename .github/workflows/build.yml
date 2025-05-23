@@ -44,10 +44,6 @@ jobs:
           BUILD_TOOLS_VERSION: "34.0.0"
           JAVA_VERSION: "11"
 
-      - name: Copy AAB
-        run: |
-          cp ${{ steps.sign_app_aab.outputs.signedReleaseFile }} ${{ env.APP_NAME }}.aab
-
       - name: Build APK
         run: |
           ./gradlew clean
@@ -66,15 +62,11 @@ jobs:
           BUILD_TOOLS_VERSION: "34.0.0"
           JAVA_VERSION: "11"
 
-      - name: Copy APK
-        run: |
-          cp ${{ steps.sign_app_apk.outputs.signedReleaseFile }} ${{ env.APP_NAME }}.apk
-
       - name: Create Release
         uses: softprops/action-gh-release@v2 # Updated to latest version
         with:
           files: |
-            ${{ env.APP_NAME }}.apk
-            ${{ env.APP_NAME }}.aab
+            app-release.apk
+            app-release.aab
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
