@@ -66,7 +66,7 @@ jobs:
         uses: softprops/action-gh-release@v2 # Updated to latest version
         with:
           files: |
-            app-release.apk
-            app-release.aab
+            ${{ steps.sign_app_apk.outputs.signedReleaseFile }}
+            ${{ steps.sign_app_aab.outputs.signedReleaseFile }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
