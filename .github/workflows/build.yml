@@ -3,14 +3,12 @@ name: Android Build and Publish on Release
 on:
   release:
     types: [published]
-    paths:
-      - '**/*.apk'
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     env:
-      APP_NAME: ${{ github.repository_owner }}_${{ github.event.repository.name }}
+      APP_NAME: ntfy-hook-${{ github.ref_name }}
 
     steps:
       - name: Checkout code
@@ -44,7 +42,7 @@ jobs:
 
       - name: Copy AAB
         run: |
-          cp app/build/outputs/bundle/release/app-release.aab ${{ env.APP_NAME }}.aab
+          cp ${{ steps.sign_app_aab.outputs.signedReleaseFile }} ${{ env.APP_NAME }}.aab
 
       - name: Build APK
         run: |
@@ -65,7 +63,7 @@ jobs:
 
       - name: Copy APK
         run: |
-          cp app/build/outputs/apk/release/app-release-unsigned-signed.apk ${{ env.APP_NAME }}.apk
+          cp ${{ steps.sign_app_apk.outputs.signedReleaseFile }} ${{ env.APP_NAME }}.apk
 
       - name: Create Release
         uses: softprops/action-gh-release@v2 # Updated to latest version
